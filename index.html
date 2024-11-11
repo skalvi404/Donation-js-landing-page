@@ -36,7 +36,6 @@
 
 
 </head>
-
 <body class="bg-background_clr font-sans">
     <nav>
         <div class="navbar flex justify-center gap-80">
@@ -56,16 +55,18 @@
 
     </nav>
 
-
+    <main>
     <!-- Main Content -->
     <div class="max-w-4xl mx-auto mt-8 p-4">
 
         <!-- Tabs Section -->
         <div class="flex justify-center mb-6">
-            <button class="btn bg-primary btn-success mx-2 ">Donation</button>
-            <button class="btn mx-2 bg-primary history-button">History</button>
+            <button class="btn mx-2" id="donate-button">Donation</button>
+            <button class="btn mx-2" id="histoy-button">History</button>
         </div>
 
+
+        <div id="all-three-card">
         <!-- Donation Cards -->
         <div class="space-y-6 pb-10">
             <!-- Card 1 -->
@@ -171,13 +172,14 @@
                 </div>
 
             </div>
+        </div>
 
-         <!-- History Section -->
-<div class="history-tab ">
+</main>   
+
+ <!-- History Section -->
+<div id="history-tab" class="hidden mb-10 mt-10 my-10 mx-10">
 <div id="history-container"></div>
-
 </div>
-
 
             <script src="js/shared.js"></script>
             <script src="js/index.js"></script>

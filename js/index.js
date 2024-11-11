@@ -171,10 +171,18 @@ const addMoney3 = document.getElementById('btn-donation3')
 
 // Hisoty TabFunctionality
 
-// const hisotyTab = document.getInputElementById('history-button')
-//     .hisotyTab.addEventListener('click', function () {
+const histoyTab=document.getElementById('histoy-button');
+histoyTab.addEventListener('click',function(){
 
+    histoyTab.classList.add("bg-primary")
 
-//     })
+    const remoCardveSection=document.getElementById('all-three-card')
+   remoCardveSection.classList.add('hidden');
+
+  document.getElementById('history-tab').classList.remove('hidden')
+   
+    
+})
+
 
 
