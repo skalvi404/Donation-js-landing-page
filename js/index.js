@@ -6,7 +6,7 @@ const addMoney = document.getElementById('btn-donation')
         const addInputMoney = getInputElementById('ammount-input')
         console.log(addInputMoney);
 
-        //Show add Input Mony on Transection Histroy
+        //Show add Input Money on Transection Histroy card-1
   
        const historyShow=document.createElement('div')
         historyShow.className='collapse collapse-close bg-white border-base-200 bg-base-200 border collapse-content p-5'
@@ -58,19 +58,6 @@ const addMoney = document.getElementById('btn-donation')
             document.getElementById('card-available-balance').classList.remove('hidden')
             return;
         }
-
-
-        // const historyShow=document.createElement('div')
-        // historyShow.className='collapse collapse-close bg-white border-base-200 bg-base-200 border collapse-content'
-        // historyShow.innerHTML=`
-        // <h2>${addMoney}Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-        // <p class="text-xs" text-gray-500">Date:${new Date().toLocaleDateString()}</p>
-        // <p class="text-xs" text-gray-500">${new Date().toLocaleTimeString()}</p>
-        // <p class="text-xs" text-gray-500">${new Date().toLocaleTimeString()}GMT +0600 (Bangladesh Standard Time)</p>
-
-        // `
-        // const historycontainerCard1=document.getElementById('history-list');
-        // historycontainerCard1.insertBefore(historyShow,historycontainerCard1.firstChild);
 
     })
 
@@ -175,11 +162,29 @@ const histoyTab=document.getElementById('histoy-button');
 histoyTab.addEventListener('click',function(){
 
     histoyTab.classList.add("bg-primary")
+    const donatinstyleChange=document.getElementById('donate-button');
+    donatinstyleChange.classList.remove('bg-primary')
 
     const remoCardveSection=document.getElementById('all-three-card')
    remoCardveSection.classList.add('hidden');
 
   document.getElementById('history-tab').classList.remove('hidden')
+   
+    
+})
+const donationTab=document.getElementById('donate-button');
+donationTab.addEventListener('click',function(){
+
+    
+
+   const remoCardveSection=document.getElementById('all-three-card')
+   remoCardveSection.classList.remove('hidden');
+
+   const histoybuttonStylechange=document.getElementById('histoy-button')
+   histoybuttonStylechange.classList.remove('bg-primary')
+
+  document.getElementById('history-tab').classList.add('hidden')
+  
    
     
 })
