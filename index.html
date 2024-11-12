@@ -38,14 +38,14 @@
 </head>
 <body class="bg-background_clr font-sans">
     <nav>
-        <div class="navbar flex justify-center gap-80">
+        <div class="navbar flex justify-center gap-16 lg:justify-around">
             <div>
                 <a class="btn btn-sm btn-light_color bg-primary">Blog</a>
             </div>
             <div class="gap-3">
 
                 <span><img src="assets/logo.png" width="25px"></span>
-                <span>Donate Bangladesh</span>
+                <span class="hidden lg:block">Donate Bangladesh</span>
             </div>
             <div class="text-gray-500 gap-3 font-semibold text-lg">
                 <img src="assets/coin.png" alt="" srcset="" id="main-available-balance">
@@ -71,7 +71,7 @@
         <div class="space-y-6 pb-10">
             <!-- Card 1 -->
             <div class="card bg-white-200 shadow-lg border rounded-lg p-5">
-                <div class="flex">
+                <div class="lg:flex">
 
                     <div class="w-full h-10 object-cover py-10">
                         <img src="assets/noakhali.png" alt="Flood Relief Image">
@@ -87,17 +87,15 @@
 
                         </div>
 
-                        <h2 class="text-lg font-semibold text-gray-800">Donate for Flood of Noakhali, Bangladesh</h2>
-                        <p class="text-gray-600 text-sm">Severe floods in Noakhali have displaced thousands of people,
+                        <h2 class="sm:text-sm font-semibold  lg:text-lg text-gray-800">Donate for Flood of Noakhali, Bangladesh</h2>
+                        <p class="text-gray-600 text-sm hidden lg:block">Severe floods in Noakhali have displaced thousands of people,
                             making this an urgent relief effort. Your support can help provide necessary resources to
                             affected families.</p>
                         <input id="ammount-input" type="number" placeholder="Write Donation Ammount"
                             class="input h-10" />
 
                         <p id="invalid-1" class="text-red-600 hidden">Invalid Input</p>
-
-                        <button class="btn bg-primary w-full mt-4 h-10" id="btn-donation">
-                            Donate Now</button>
+                        <label for="my_modal_6" class="btn bg-primary w-full mt-4 h-10" id="btn-donation">Donate Now</label>
                     </div>
 
                 </div>
@@ -106,7 +104,7 @@
 
             <!-- Card 2 -->
             <div class="card bg-white-200 shadow-lg border rounded-lg p-5 pb-10">
-                <div class="flex">
+                <div class="lg:flex">
 
                     <div class="w-full h-0 object-cover py-10">
                         <img src="assets/feni.png" alt="Flood Relief Image">
@@ -131,7 +129,7 @@
                             aid, including food,clean water, and medical supplies,</p>
                         <input id="ammount-input2" type="text" placeholder="Write Donation Ammount" class="input h-10" />
                         <p id="invalid-2" class= "text-red-600 hidden">Invalid Input</p>
-                        <button class="btn bg-primary w-full mt-4 h-10" id="btn-donation2">Donate Now</button>
+                        <label for="my_modal_6" class="btn bg-primary w-full mt-4 h-10" id="btn-donation2">Donate Now</label>
                     </div>
 
                 </div>
@@ -141,7 +139,7 @@
             <!-- Card 3 -->
 
             <div class="card bg-white-200 shadow-lg border rounded-lg p-5 pb-10">
-                <div class="flex">
+                <div class="lg:flex">
 
                     <div class="w-full h-10 object-cover py-10">
                         <img src="assets/quota-protest.png" alt="Flood Relief Image">
@@ -164,9 +162,9 @@
                             assistance, rehabilitation, and necessary supplies to those affected. </p>
                         <input id="ammount-input3" type="text" placeholder="Write Donation Ammount" class="input h-10" />
                         <p id="invalid-3" class="text-red-600 hidden">Invalid Input</p>
-                        <button class="btn bg-primary w-full mt-4 h-10" id="btn-donation3">
+    
+                            <label for="my_modal_6" class="btn bg-primary w-full mt-4 h-10" id="btn-donation3">Donate Now</label>
 
-                            Donate Now</button>
                     </div>
 
                 </div>
@@ -180,6 +178,32 @@
 <div id="history-tab" class="hidden mb-10 mt-10 my-10 mx-10">
 <div id="history-container"></div>
 </div>
+
+
+<!-- modal section start -->
+ <div id="button-modal">
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box">
+<div class="flex-col text-center items-center justify-center">
+    <h3 class="text-4xl font-extrabold">Congrats!</h3>
+    <p class="py-4">You Have Donated For Humankind</p>
+    <h2>Successfully</h2>
+    <div class="modal-action">
+        <label for="my_modal_6" class="btn">Close!</label>
+      </div>
+</div>
+
+    
+
+    
+   
+  </div>
+</div>
+</div>
+
+
+
 
             <script src="js/shared.js"></script>
             <script src="js/index.js"></script>

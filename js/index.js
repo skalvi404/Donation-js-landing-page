@@ -12,7 +12,7 @@ const addMoney = document.getElementById('btn-donation')
         historyShow.className='collapse collapse-close bg-white border-base-200 bg-base-200 border collapse-content p-5'
         historyShow.innerHTML=`
         <h2 class="font-semibold">${addInputMoney} Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-        <span class="flex">
+        <span class="flex gap-1">
         <p class="text-xs" text-gray-500">Date:${new Date().toDateString()}</p><br>
         <p class="text-xs" text-gray-500">${new Date().toLocaleTimeString()}GMT +0600 (Bangladesh Standard Time)</p>
         </span>
@@ -59,6 +59,11 @@ const addMoney = document.getElementById('btn-donation')
             return;
         }
 
+// Modal Functionality Start
+
+
+
+
     })
 
 
@@ -69,6 +74,23 @@ const addMoney2 = document.getElementById('btn-donation2')
         // console.log("donate button working properly");
         const addInputMoney2 = getInputElementById('ammount-input2')
         console.log(addInputMoney2);
+
+
+        //Show add Input Money on Transection Histroy card-2
+  
+        const historyShow2=document.createElement('div')
+        historyShow2.className='collapse collapse-close bg-white border-base-200 bg-base-200 border collapse-content p-5'
+        historyShow2.innerHTML=`
+        <h2 class="font-semibold">${addInputMoney2} Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+        <span class="flex gap-1">
+        <p class="text-xs" text-gray-500">Date:${new Date().toDateString()}</p><br>
+        <p class="text-xs" text-gray-500">${new Date().toLocaleTimeString()}GMT +0600 (Bangladesh Standard Time)</p>
+        </span>
+        `
+        const historycontaier2=document.getElementById('history-container');
+        historycontaier2.appendChild(historyShow2);
+
+
 
         const cardAvailableBalance2 = getTextFieldid('card-available-balance2')
         console.log(cardAvailableBalance2);
@@ -115,6 +137,35 @@ const addMoney3 = document.getElementById('btn-donation3')
         // console.log("donate button working properly");
         const addInputMoney3 = getInputElementById('ammount-input3')
         console.log(addInputMoney3);
+
+
+        //Show add Input Money on Transection Histroy card-3
+  
+        const historyShow3=document.createElement('div')
+        historyShow3.className='collapse collapse-close bg-white border-base-200 bg-base-200 border collapse-content p-5'
+        historyShow3.innerHTML=`
+        <h2 class="font-semibold">${addInputMoney3} Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+        <span class="flex gap-1">
+        <p class="text-xs" text-gray-500">Date:${new Date().toDateString()}</p><br>
+        <p class="text-xs" text-gray-500">${new Date().toLocaleTimeString()}GMT +0600 (Bangladesh Standard Time)</p>
+        </span>
+        `
+        const historycontaier3=document.getElementById('history-container');
+        historycontaier3.appendChild(historyShow3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         const cardAvailableBalance3 = getTextFieldid('card-available-balance3')
         console.log(cardAvailableBalance3);
@@ -172,6 +223,8 @@ histoyTab.addEventListener('click',function(){
    
     
 })
+
+// donation button
 const donationTab=document.getElementById('donate-button');
 donationTab.addEventListener('click',function(){
 
@@ -182,6 +235,8 @@ donationTab.addEventListener('click',function(){
 
    const histoybuttonStylechange=document.getElementById('histoy-button')
    histoybuttonStylechange.classList.remove('bg-primary')
+   const donateButton=document.getElementById('donate-button')
+   donateButton.classList.add('bg-primary')
 
   document.getElementById('history-tab').classList.add('hidden')
   
