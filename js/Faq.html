@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ about Js</title>
+  <!-- Tailwind and Daisy UI CDN -->
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font-awosome CDN -->
+    <script src="https://kit.fontawesome.com/de163cd3b9.js" crossorigin="anonymous"></script>
+    <!-- Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97);',
+                        secondary: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);',
+                        body: 'rgb(242,242,242)',
+                        background_clr: 'rgb(249, 247, 243);',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+  <nav class="sticky top-0 z-50 ">
+    <div class="navbar flex justify-center gap-16 lg:justify-around">
+        <div>
+            <a href="/index.html" class="btn btn-sm btn-light_color bg-primary">Home</a>
+        </div>
+        <div class="gap-3">
+
+            <span><img src="/assets/logo.png" width="25px"></span>
+            <span class="hidden lg:block">Donate Bangladesh</span>
+        </div>
+        <div class="text-gray-500 gap-3 font-semibold text-lg">
+            <img src="assets/coin.png" alt="" srcset="" id="main-available-balance">
+            <span id="main-balance">5500 BDT</span>
+        </div>
+    </div>
+
+</nav>
+    <div class="collapse collapse-plus bg-base-200 mt-24">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)</div>
+        <div class="collapse-content">
+          <p>The DOM is a tree-like structure that represents HTML documents, allowing JavaScript to interact with and modify web content.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>Use methods like document.getElementById(), document.querySelector(), or document.querySelectorAll()</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Use setAttribute() for attributes and element.style or classList for styles and classes.</p>
+        </div>
+      </div>
+<script src="index.js"></script>
+<script src="shared.js"></script>
+
+</body>
+</html>
